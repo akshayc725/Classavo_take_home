@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Medium Editor for Classavo</title>
+	 <link rel="stylesheet" type="text/css" href="{% static 'bower_components/medium-editor/dist/css/medium-editor.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mediumeditor/django-mediumeditor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bower_components/medium-editor/dist/css/themes/beagle.css' %}">
+    {{ form.media }}
+
+   <style>
+   .wrapper{
+       position: relative;
+       left: 660px;
+       top : 300px;
+       
+   }
+   
+   </style> 
+   
+   <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    </style>
+    
+</head>
+<body style="background-color:#D3D3D3">
+    <img src="{% static 'Classavo.png' %}" alt="Classavo Logo" class="center">
+	<h1 style="text-align:center">Classavo Take-Home test by Akshay</h1>
+<form method="post">
+	<div style="margin-top: 100px;">
+  {% csrf_token %}
+  {{ form }}
+</div>
+<footer class="social-footer">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div  class="wrapper">
+  <a href="http://www.linkedin.com/in/akshayc725" target="_blank"><i class="fa fa-3x fa-linkedin"></i></a>
+  <a href="https://github.com/akshayc725" target="_blank"><i class="fa fa-3x fa-github"></i></a>
+  <a href="https://www.quora.com/profile/Akshay-Chaudhari-20" target="_blank"><i class="fa fa-3x fa-quora"></i></a>
+  <a href="https://www.instagram.com/lazy_shutterbug/" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+</div>
+
+      </footer>      
+</form>
+</body>
+</html>
