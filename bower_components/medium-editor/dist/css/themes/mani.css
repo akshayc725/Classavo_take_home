@@ -20,19 +20,19 @@
     -webkit-transition: background-color .2s ease-in, color .2s ease-in;
             transition: background-color .2s ease-in, color .2s ease-in; }
     .medium-editor-toolbar li button:hover {
-      background-color: #5c90c7;
-      background-color: rgba(92, 144, 199, 0.45);
+      /*background-color: #5c90c7;*/
+      background-color: rgba(115, 75, 157, 1);
       color: #fff; }
   .medium-editor-toolbar li .medium-editor-button-first {
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    background-color: #734B9D   }
+    background-color: #734B9D;   }
   .medium-editor-toolbar li .medium-editor-button-last {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px; }
   .medium-editor-toolbar li .medium-editor-button-active {
     background-color: #5c90c7;
-    background-color: rgba(92, 144, 199, 0.45);
+    background-color: rgba(115, 75, 157, 1);
     color: #000;
     background: -webkit-linear-gradient(top, #dee7f0, rgba(0, 0, 0, 0.1));
     background: linear-gradient(to bottom, #dee7f0, rgba(0, 0, 0, 0.1)); }

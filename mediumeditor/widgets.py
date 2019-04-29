@@ -31,11 +31,20 @@ class MediumEditorTextarea(forms.Textarea):
         return html
 
     class Media:
+     #   css = {'all': (
+     #       '//cdn.jsdelivr.net/medium-editor/latest/css/'
+     #       'medium-editor.min.css',
+     #       'css/mediumeditor/django-mediumeditor.css',
+     #       '//cdn.jsdelivr.net/medium-editor/latest/css/themes/{}.min.css'.format(
+     #           settings.MEDIUM_EDITOR_THEME
+     #       )
+     #   )}
+     
         css = {'all': (
-            '//cdn.jsdelivr.net/medium-editor/latest/css/'
+             'bower_components/medium-editor/dist/css/themes/'
             'medium-editor.min.css',
-            'css/mediumeditor/django-mediumeditor.css',
-            '//cdn.jsdelivr.net/medium-editor/latest/css/themes/{}.min.css'.format(
+            'static/css/mediumeditor/django-mediumeditor.css',
+            'bower_components/medium-editor/dist/css/themes/{}.min.css'.format(
                 settings.MEDIUM_EDITOR_THEME
             )
         )}

@@ -21,7 +21,7 @@
             transition: background-color .2s ease-in, color .2s ease-in; }
     .medium-editor-toolbar li button:hover {
       background-color: #5c90c7;
-      background-color: rgba(92, 144, 199, 0.45);
+      background-color: rgba(115, 75, 157, 1);
       color: #fff; }
   .medium-editor-toolbar li .medium-editor-button-first {
     border-top-left-radius: 2px;

@@ -4,15 +4,16 @@
 <head>
 	<title>Medium Editor for Classavo</title>
 	 <link rel="stylesheet" type="text/css" href="{% static 'bower_components/medium-editor/dist/css/medium-editor.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/mediumeditor/django-mediumeditor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mediumeditor/django-mediumeditor.css' %}?version=6"> 
     <link rel="stylesheet" type="text/css" href="{% static 'bower_components/medium-editor/dist/css/themes/beagle.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bower_components/medium-editor/dist/css/themes/mani.min.css' %} ">
     {{ form.media }}
 
    <style>
    .wrapper{
        position: relative;
        left: 660px;
-       top : 300px;
+       top : 290px;
        
    }
    
@@ -25,11 +26,11 @@
           margin-right: auto;
         }
     </style>
-    
+
 </head>
 <body style="background-color:#D3D3D3">
     <img src="{% static 'Classavo.png' %}" alt="Classavo Logo" class="center">
-	<h1 style="text-align:center">Classavo Take-Home test by Akshay</h1>
+	<h1 style="text-align:center">Classavo Take-Home test by Akshay Chaudhari</h1>
 <form method="post">
 	<div style="margin-top: 100px;">
   {% csrf_token %}
